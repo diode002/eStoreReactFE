@@ -1,6 +1,6 @@
 {
   "name": "clothing-backend",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "engines": {
     "node": "10.15.2",
     "npm": "5.8.0"
@@ -9,7 +9,7 @@
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon ./bin/www",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\" ",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "build": "cd client && yarn run build",
     "start": "node ./bin/www",
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
