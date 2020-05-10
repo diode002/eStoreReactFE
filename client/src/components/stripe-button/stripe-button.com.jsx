@@ -8,8 +8,6 @@ const StripeCheckoutButton = ({ price }) => {
   const publishableKey = "pk_test_kebrrHJsWlz4xjNn0QCDm3ka00SlkrthZG";
 
   const onToken = (token) => {
-    console.log(token);
-
     axios({
       url: "payments",
       method: "post",
@@ -20,7 +18,6 @@ const StripeCheckoutButton = ({ price }) => {
       })
       .catch((error) => {
         console.log("Payment error: ", JSON.parse(error));
-
         alert(
           "There is a issue with your credit card. Please make sure to use provided credit card."
         );
