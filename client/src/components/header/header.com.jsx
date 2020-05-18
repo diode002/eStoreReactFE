@@ -6,7 +6,7 @@ import { selectCurrentUser } from "../../redux/user/user.selector";
 import { createStructuredSelector } from "reselect";
 
 import { ReactComponent as Logo } from "../../assests/crown.svg";
-import "./header.sty.scss";
+// import "./header.sty.scss";
 
 import {
   HeaderContainer,
